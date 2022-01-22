@@ -1,10 +1,26 @@
 module.exports = {
-  content: [
-    './pages/**/*.{js,ts,jsx,tsx}',
-    './components/**/*.{js,ts,jsx,tsx}',
-  ],
+  content: ["./*/**/*.tsx", "./*/*/**/*.tsx"],
   theme: {
-    extend: {},
+    extend: {
+      outline: false,
+    },
+    fontFamily: {
+      sans: [
+        "Inter",
+        "-apple-system",
+        "BlinkMacSystemFont",
+        "Segoe UI",
+        "Roboto",
+        "Helvetica",
+        "Arial",
+        "sans-serif",
+      ],
+      inter: ["Inter"],
+    },
+    fontSmoothing: ["hover", "focus"],
   },
   plugins: [],
-}
+  corePlugins: {
+    outline: false,
+  },
+};
