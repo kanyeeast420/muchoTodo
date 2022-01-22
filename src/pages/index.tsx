@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
-import { Layout } from "../components/layout/Layout";
+import { Layout } from "../components/Layout/Layout";
 
 export default function Home() {
   return (
@@ -8,7 +8,7 @@ export default function Home() {
       <Head>
         <title>muchoTodo</title>
       </Head>
-      
+
       <Layout />
     </div>
   );
