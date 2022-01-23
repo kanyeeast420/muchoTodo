@@ -10,7 +10,14 @@ export const Todo: React.FC<TodoProps> = ({ name, _id }) => {
   return (
     <div className="todo text-white lg:px-24 lg:py-10 p-2 h-full w-full text-base md:text-2xl lg:text-3xl border-2 border-slate-700 rounded flex flex-col items-center justify-center text-center">
       <span>{name}</span>
-      <span className="text-indigo-200 text-xs pt-4">ID: {_id}</span>
+      <div className="flex flex-row text-base items-center justify-center pt-4">
+        <span className="text-indigo-200 text-xs text-center px-5">
+          ID: {_id}
+        </span>
+        <span className="rounded bg-indigo-500 p-3 cursor-pointer">
+          <MdDeleteOutline />
+        </span>
+      </div>
     </div>
   );
 };
