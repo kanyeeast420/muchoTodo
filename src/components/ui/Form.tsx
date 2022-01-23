@@ -12,7 +12,7 @@ export const Form: React.FC<Props> = () => {
 
   return (
     <form
-      className="form flex flex-row"
+      className="form flex flex-row "
       onSubmit={(e) => {
         e.preventDefault();
         const newErrors = { todoName: "" };
@@ -28,18 +28,22 @@ export const Form: React.FC<Props> = () => {
           headers: {
             "Content-type": "application/json",
           },
-          body: JSON.stringify(value),
+          body: JSON.stringify({ todoName: e.target.todoName.value }),
         })
           .then((x) => x.json())
-          .then(() => {
-            Router.push("/");
-          })
           .catch((err) => {
             setErrors({ todoName: "internal Error" });
           });
+
+        Router.push("/");
       }}
     >
-      <Input title="todoName" placeholder="New todo" type="text" />
+      <Input
+        title="todoName"
+        name="todoName"
+        placeholder="New todo"
+        type="text"
+      />
       <Button placeholder="Go" />
     </form>
   );

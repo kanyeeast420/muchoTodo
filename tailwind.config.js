@@ -3,6 +3,9 @@ module.exports = {
   theme: {
     extend: {
       outline: false,
+      gridTemplateRows: {
+        auto: "auto auto",
+      },
     },
     fontFamily: {
       sans: [
@@ -19,8 +22,11 @@ module.exports = {
     },
     fontSmoothing: ["hover", "focus"],
   },
-  plugins: [],
+  plugins: [require("tailwind-scrollbar")],
   corePlugins: {
     outline: false,
+  },
+  variants: {
+    scrollbar: ["dark"],
   },
 };
