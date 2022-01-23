@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Todo } from "../UI/Todo";
+import { Todo } from "../ui/Todo";
 
 interface FeedProps {}
 
