@@ -25,6 +25,8 @@ export const Input: React.FC<InputProps> = ({
         className="w-full p-4 px-10 bg-transparent text-white lg:text-7xl text-2xl h-full"
         required
       />
+
+  
     </div>
   );
 };

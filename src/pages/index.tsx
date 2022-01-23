@@ -8,6 +8,14 @@ export default function Home() {
       <Head>
         <title>muchoTodo</title>
         <link
+          rel="icon"
+          href="../public/favicon.ico"
+          type="image/x-icon"
+        />
+        <meta name="theme-color" content="#6366f1" />
+        
+
+        <link
           rel="preload"
           href="../public/fonts/IntegralCF-Bold.otf"
           as="font"
