@@ -6,6 +6,13 @@ import Router from "next/router";
 
 interface FormProps {}
 
+interface TodoFormTarget extends EventTarget {
+  todoName: any;
+  target: {
+    todoName: string;
+  };
+}
+
 export const Form: React.FC<FormProps> = () => {
   const [value, setValue] = useState({ todoName: "" });
   const [errors, setErrors] = useState({ todoName: "" });
@@ -28,7 +35,9 @@ export const Form: React.FC<FormProps> = () => {
           headers: {
             "Content-type": "application/json",
           },
-          body: JSON.stringify({ todoName: e.target.todoName.value }),
+          body: JSON.stringify({
+            todoName: (e.target as TodoFormTarget).todoName.value,
+          }),
         })
           .then((x) => x.json())
           .catch((err) => {
