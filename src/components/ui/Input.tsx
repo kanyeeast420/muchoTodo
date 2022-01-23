@@ -22,7 +22,7 @@ export const Input: React.FC<InputProps> = ({
         name={name}
         title={title}
         autoComplete="off"
-        className="w-full p-4 px-10 bg-transparent text-white lg:text-7xl text-2xl h-full"
+        className="w-full p-4 px-10 bg-transparent text-white placeholder:text-indigo-400 lg:text-7xl text-2xl h-full"
         required
       />
 
