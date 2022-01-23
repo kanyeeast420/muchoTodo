@@ -14,7 +14,7 @@ export const Todo: React.FC<TodoProps> = ({ name, _id }) => {
         <span className="text-indigo-200 text-sm text-center px-5 font-code">
           ID: {_id}
         </span>
-        <span className="rounded bg-indigo-500 p-3 cursor-pointer">
+        <span className="rounded bg-indigo-500 hover:bg-indigo-400 p-3 cursor-pointer transition-all ease-in-out duration-500">
           <MdDeleteOutline />
         </span>
       </div>
