@@ -10,7 +10,23 @@
   width: 0.1px;
 }
 
-.Feed {
-  -webkit-app-region: drag;
-  user-select: none;
+@font-face {
+  font-family: "Integral CF";
+  src: url("../public/fonts/IntegralCF-Bold.otf") format("opentype");
+  font-style: bold;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Integral CF";
+  src: url("../public/fonts/IntegralCF-Medium.otf") format("opentype");
+  font-style: medium;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Integral CF";
+  src: url("../public/fonts/IntegralCF-Regular.otf") format("opentype");
+  font-style: normal;
+  font-display: swap;
 }
