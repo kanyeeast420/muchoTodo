@@ -4,9 +4,9 @@ import { Button } from "./Button";
 import { useState } from "react";
 import Router from "next/router";
 
-interface Props {}
+interface FormProps {}
 
-export const Form: React.FC<Props> = () => {
+export const Form: React.FC<FormProps> = () => {
   const [value, setValue] = useState({ todoName: "" });
   const [errors, setErrors] = useState({ todoName: "" });
 

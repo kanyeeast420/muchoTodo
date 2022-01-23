@@ -3,8 +3,14 @@ import { Todo } from "../ui/Todo";
 
 interface FeedProps {}
 
+interface Todo {
+  _id: string;
+  todoName: string;
+  date: string;
+}
+
 export const Feed: React.FC<FeedProps> = () => {
-  const [todos, setTodos] = useState([]);
+  const [todos, setTodos] = useState<Todo[]>([]);
   useEffect(() => {
     fetch("/api/todos")
       .then((res) => res.json())

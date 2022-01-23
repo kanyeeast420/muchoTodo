@@ -10,10 +10,6 @@ export default function Home() {
       </Head>
 
       <Layout />
-
-      <footer className="bg-slate-800 text-indigo-200 text-md text-center p-10 border-t-2 border-indigo-200">
-        <span>Always keep track of your todos</span>
-      </footer>
     </div>
   );
 }
