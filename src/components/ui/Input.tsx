@@ -18,6 +18,7 @@ export const Input: React.FC<InputProps> = ({
       <input
         type={type}
         placeholder={placeholder}
+        autoFocus
         name={name}
         title={title}
         autoComplete="off"
