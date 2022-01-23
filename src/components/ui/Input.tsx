@@ -14,7 +14,7 @@ export const Input: React.FC<InputProps> = ({
   name,
 }) => {
   return (
-    <div className="input w-full border-b-2 border-indigo-300">
+    <div className="input w-full border-b-2 border-indigo-200">
       <input
         type={type}
         placeholder={placeholder}
