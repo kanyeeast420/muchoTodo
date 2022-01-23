@@ -7,9 +7,10 @@ import Router from "next/router";
 interface FormProps {}
 
 interface TodoFormTarget extends EventTarget {
+  todoName: any;
   target: {
-    todoName: { value: string } & HTMLInputElement;
-  } & HTMLFormElement;
+    todoName: string;
+  };
 }
 
 export const Form: React.FC<FormProps> = () => {
