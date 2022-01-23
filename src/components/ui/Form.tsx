@@ -40,7 +40,7 @@ export const Form: React.FC<FormProps> = () => {
           }),
         })
           .then((x) => x.json())
-          .then(() => Router.push("/"))
+          .then(() => Router.reload())
           .catch((err) => {
             setErrors({ todoName: "internal Error" });
           });
