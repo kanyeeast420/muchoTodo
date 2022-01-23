@@ -9,7 +9,7 @@ module.exports = {
     },
     fontFamily: {
       sans: [
-        "Inter",
+        "Integral CF",
         "-apple-system",
         "BlinkMacSystemFont",
         "Segoe UI",
@@ -18,7 +18,8 @@ module.exports = {
         "Arial",
         "sans-serif",
       ],
-      inter: ["Inter"],
+      IntegralCF: ["Integral CF"],
+      code: ["Consolas"],
     },
     fontSmoothing: ["hover", "focus"],
   },
