@@ -1,6 +1,6 @@
 import React from "react";
 import { Form } from "../ui/Form";
-import { Feed } from "../feed/Feed";
+import { Feed } from "../Feed/Feed";
 
 interface LayoutProps {}
 
