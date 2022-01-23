@@ -25,6 +25,12 @@ export default function Home() {
           as="font"
           crossOrigin=""
         />
+        <link
+          rel="preload"
+          href="../public/fonts/Monaco.ttf"
+          as="font"
+          crossOrigin=""
+        />
       </Head>
 
       <Layout />

@@ -19,7 +19,7 @@ module.exports = {
         "sans-serif",
       ],
       IntegralCF: ["Integral CF"],
-      code: ["Consolas"],
+      code: ["Monaco"],
     },
     fontSmoothing: ["hover", "focus"],
   },
