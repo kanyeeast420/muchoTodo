@@ -5,7 +5,15 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
+  const { id } = req.query;
   const db = await connectToDb();
-  const todos = await db.collection("todos").find().toArray();
-  res.status(200).json(todos);
+  console.log(id)
+  const todo = await db.collection("todos").findOne({
+    _id: id,
+  });
+
+  res.status(200).json({
+    ok: true,
+    todo,
+  });
 }

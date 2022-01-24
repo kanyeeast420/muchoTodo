@@ -3,6 +3,7 @@ import { Input } from "./Input";
 import { Button } from "./Button";
 import { useState } from "react";
 import Router from "next/router";
+import { BsArrowReturnLeft } from "react-icons/bs";
 
 interface FormProps {}
 
@@ -54,7 +55,9 @@ export const Form: React.FC<FormProps> = () => {
         placeholder="New todo"
         type="text"
       />
-      <Button placeholder="Go" />
+      <Button type="submit">
+        <BsArrowReturnLeft />
+      </Button>
     </form>
   );
 };

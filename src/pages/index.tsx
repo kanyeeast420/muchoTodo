@@ -1,19 +1,14 @@
 import Head from "next/head";
-import Link from "next/link";
-import { Layout } from "../components/layout/Layout";
+import { Form } from "../components/ui/Form";
+import { Feed } from "../components/Feed/Feed";
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen w-full h-full">
+    <div className="Layout flex flex-col w-full min-h-screen h-full bg-slate-800 scrollbar scrollbar-thumb-slate-500 scrollbar-track-slate-600">
       <Head>
         <title>muchoTodo</title>
-        <link
-          rel="icon"
-          href="../public/favicon.ico"
-          type="image/x-icon"
-        />
+        <link rel="icon" href="../public/favicon.ico" type="image/x-icon" />
         <meta name="theme-color" content="#6366f1" />
-        
 
         <link
           rel="preload"
@@ -41,7 +36,8 @@ export default function Home() {
         />
       </Head>
 
-      <Layout />
+      <Form />
+      <Feed />
     </div>
   );
 }

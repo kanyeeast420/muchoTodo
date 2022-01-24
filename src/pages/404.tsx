@@ -1,5 +1,6 @@
 import React from "react";
 import Router from "next/router";
+import { Button } from "../components/ui/Button";
 
 export default class ErrorPage extends React.Component {
   render() {
