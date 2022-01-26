@@ -4,7 +4,7 @@ import { Feed } from "../components/Feed/Feed";
 
 export default function Home() {
   return (
-    <div className="Layout flex flex-col !w-full !max-w-full h-full bg-slate-800 scrollbar scrollbar-thumb-slate-500 scrollbar-track-slate-600">
+    <div className="Layout flex flex-col !w-full !max-w-full min-h-screen h-full !bg-slate-800 scrollbar scrollbar-thumb-slate-500 scrollbar-track-slate-600">
       <Head>
         <title>muchoTodo</title>
         <link rel="icon" href="../public/favicon.ico" type="image/x-icon" />

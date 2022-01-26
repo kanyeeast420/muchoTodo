@@ -20,7 +20,7 @@ export const Form: React.FC<FormProps> = () => {
 
   return (
     <form
-      className="form flex flex-row "
+      className="form flex flex-row transition-all ease-in duration-500"
       onSubmit={(e) => {
         e.preventDefault();
         const newErrors = { todoName: "" };
