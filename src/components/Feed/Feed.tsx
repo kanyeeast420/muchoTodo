@@ -18,7 +18,7 @@ export const Feed: React.FC<FeedProps> = () => {
   }, []);
 
   return (
-    <div className="Feed grid grid-rows-2 h-full m-6 gap-5 scrollbar scrollbar-thumb-slate-500 scrollbar-track-slate-600">
+    <div className="Feed grid grid-rows-2 h-full w-full p-2 gap-4 scrollbar scrollbar-thumb-slate-500 scrollbar-track-slate-600">
       {todos.map((todo) => (
         <Todo name={todo.todoName} key={todo._id} _id={todo._id} />
       ))}
